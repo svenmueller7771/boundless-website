@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="website-images/Boundless-ST-01.png">
+</head>
+<header>
+  <title>
+    boundless | About
+  </title>
+  <!-- Bootsrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+
+<body>
+  <global-navbar></global-navbar>
+
+  <img class="logo-about" src="website-images/Boundless-ST-01.png" alt="boundless logo">
+  <h1 class="headers">About us</h1>
+  <h5 class="headers"><strong>boundless</strong></h5>
+  <p class="paragraph"><em>adjective</em></p>
+  <p class="paragraph">"enthusiasts who devote boundless energy to their hobby"</p>
+  <p class="paragraph">"having no limits or restrictions"</p>
+  <h5 class="headers"><strong>collective</strong></h5>
+  <p class="paragraph"><em>noun</em></p>
+  <p class="paragraph">"members of a group motivated by at least one common issue or interest"</p>
+  <p class="paragraph">"a group of people that work together to achieve a common objective"</p>
+
+  <h2 class="headers">Who we are</h2>
+  <p class="paragraph">The Boundless Collective, aka boundless, was founded in 2022 by two best friends with a common
+    passion for design, entrepreneurship and community.</p>
+
+  <h2 class="headers">How it started</h2>
+  <p class="paragraph">This story goes back to primary school and our favourite subject: woodwork. </p>
+  <br>
+  <p class="paragraph">While we had not developed the acumen for entrepreneurship and business - one thing was always
+    certain - the aptitude we had to create expressive goods from raw materials.</p>
+
+  <h2 class="headers">Our vision</h2>
+  <p class="paragraph"><strong>Our philosophy is our muse</strong>.</p>
+  <br>
+  <p class="paragraph">We are about conscious craftsmanship.</p>
+  <p class="paragraph">We are about unparalleled quality.</p>
+  <p class="paragraph">We are about continuous improvement. </p>
+  <p class="paragraph">We are boundless.</p>
+  <br>
+  <p class="paragraph"><em>“Of every continuum we belonged to, this is perhaps the most important</em> - Co-founder,
+    Sven Muller</p>
+
+  <h2 class="headers">Our artisans</h2>
+  <p class="paragraph">20 Shapes</p>
+  <p class="paragraph">Kiri Creates</p>
+  <p class="paragraph">Frankly Said</p>
+  <p class="paragraph">Tablego</p>
+  <br>
+  <p class="paragraph">Boundless only engages in fair trade agreements with local artisans. Terms and conditions
+    apply.</p>
+  <br>
+  <p class="paragraph">Interested in joining the Boundless Collective? Email us at hello@boundlesscollective.co.za
+  </p>
+  <br>
+  <p class="paragraph"><em>"The work of making a world requires many hands."</em> - unknown</p>
+
+  <h2 class="headers">Our community projects</h2>
+  <p class="paragraph">Greenpop Foundation</p>
+  <br>
+  <p class="paragraph">For every item purchased, R50 is donated to the <a class="links"
+      href="https://greenpop.org/">Greenpop
+      Foundation</a>.</p>
+  <br>
+  <p class="paragraph">Greenpop Foundation NPC is a registered non-profit organisation on a mission to plant trees,
+    green communities and empower environmental stewards across Sub-Saharan Africa. Join the Treevolution.</p>
+    <div class="footer-spacer"></div>
+    <script src="component.js"></script>
+    <script>
+      const navbarMenuButton = document.querySelector(".navbar-menu-button");
+      const navbarMenu = document.querySelector(".navbar-menu");
+  
+      navbarMenuButton.addEventListener("click", mobileMenu);
+  
+      function mobileMenu() {
+        navbarMenuButton.classList.toggle("active");
+        navbarMenu.classList.toggle("active");
+      }
+  
+    </script>
+    <script>
+      document.querySelector(".topbanner-button").addEventListener("click", function () {
+        this.closest(".topbanner").style.display = "none";
+  
+        document.getElementById("herobanner").style.height = "calc(100vh - 29px)";
+      })
+    </script>
+    <script>
+      window.onscroll = function() {myFunction()};
+    
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+<global-footer></global-footer>
+
+</html>

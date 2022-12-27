@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+<body>
+    <div class="topbanner">
+        <div class="topbanner-text">
+          <strong>Launch Special:</strong> Free delivery nationwide
+        </div>
+        <button class="topbanner-button" type="button">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+      </div>
+    <div>
+    <form method="GET">
+        <span style="color:blue">First Name:</span> <input type="text" name="firstname"><br>
+        Last Name: <input type="text" name="lastname"><br>
+        Email: <input type="email" required name="email"><br>
+        Password <input type="Password" min="5" name="password"><br>
+        Birthday: <input type="date" name="birthday"><br>
+        Gender: <br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="other">Other<br>
+        Pets: <br>
+        <input type="checkbox" name="cats" value="cats"> Cats <br>
+        <input type="checkbox" name="dogs" value="dogs"> Dogs <br>
+        <input type="checkbox" name="tortoises" value="tortoises"> Tortoises <br>
+        Cars:<br>
+        <select multiple name="cars">
+            <option value="volvo" name="volvo">Volvo</option>
+            <option value="bmw" name="bmw">BMW</option>
+        </select><br>
+        <input type="submit" value="Register!">
+        <input type="reset">
+    </form>
+</div>
+</body>
+<footer>
+    <div class="footer">
+      <div class="footer-container">
+        <h5 class="footer-header">The Company</h5>
+       <ul class="footer-list">
+          <li><a class="footer-text" href="products.html">Our Story</a></li>
+          <li><a class="footer-text" href="products.html">Collectives</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <h5 class="footer-header">Customer Service</h5>
+        <ul class="footer-list">
+        <li><a class="footer-text" href="products.html">Contact Us</a></li>
+        <li><a class="footer-text" href="products.html">Shipping</a></li>
+        <li><a class="footer-text" href="products.html">FAQ</a></li>
+        <li><a class="footer-text" href="products.html">Terms & Conditions</a></li>
+        <li><a class="footer-text" href="products.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <p class="trademark">boundless. 2022.</p>
+  </footer>
+</html>
+
+<!-- 
+    ?
+    firstname=Sven
+    &lastname=Muller
+    &email=fake%40gmai.com
+    &password=123455
+    &birthday=
+    &gender=on
+    &cats=on
+    &cars=volvo -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="website-images/Boundless-ST-01.png">
+</head>
+<header>
+  <title>
+    boundless | Backgammon
+  </title>
+  <!-- Bootsrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+
+<body>
+
+  <global-navbar></global-navbar>
+  <h1 class="big-headers">Backgammon travel set</h1>
+
+
+  <div class="footer-spacer"></div>
+  <script src="component.js"></script>
+  <script>
+    const navbarMenuButton = document.querySelector(".navbar-menu-button");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    navbarMenuButton.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      navbarMenuButton.classList.toggle("active");
+      navbarMenu.classList.toggle("active");
+    }
+
+  </script>
+  <script>
+    document.querySelector(".topbanner-button").addEventListener("click", function () {
+      this.closest(".topbanner").style.display = "none";
+
+      document.getElementById("herobanner").style.height = "calc(100vh - 29px)";
+    })
+  </script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+<global-footer></global-footer>
+
+</html>
