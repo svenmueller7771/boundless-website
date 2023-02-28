@@ -61,7 +61,6 @@ p {
   align-items: center;
   padding: 2px 10px;
   background-color: #e2ddd3;
-  overflow: hidden;
   z-index: 99999;
 
 }
@@ -77,17 +76,6 @@ p {
   font-size: 120%;
 
 
-}
-
-.navbar-dropdown-button {
-  background-color: #e2ddd3;
-  font-size: 100%;
-  border: none;
-  font-family: "Poppins", sans-serif;
-}
-
-.navbar-dropdown-button:hover {
-  color: grey;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -124,6 +112,8 @@ p {
 
 @media only screen and (max-width: 860px) {
 
+ 
+
   .dropdown-content {
     position: relative;
     background-color: whitesmoke;
@@ -138,6 +128,7 @@ p {
     display: block;
     font-size: 80%;
   }
+  
 
 }
 
@@ -168,6 +159,7 @@ p {
   display: none;
   color: black;
   font-size: 100%;
+  background-color: none;
 }
 
 .bar {
@@ -186,6 +178,10 @@ p {
     justify-content: flex-start;
     /* overflow: hidden; */
   }
+
+.navbar-link:hover {
+  color: #e2ddd3;
+}
 
   .navbar-menu {
     flex-direction: column;
@@ -213,7 +209,11 @@ p {
     display: block;
     cursor: pointer;
     margin-left: auto;
-    margin-right: 20px
+    margin-right: 20px;
+  }
+
+  .navbar-menu-button.active {
+    background-color: #e2ddd3; 
   }
 
   .navbar-menu-button.active .bar:nth-child(2) {
@@ -319,7 +319,7 @@ p {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-items: center;
   gap: 20px;
   margin: 0px 80px;
@@ -328,7 +328,7 @@ p {
 
 .collection {
   width: 100%;
-  Height: 400px;
+  Height: 300px;
   object-fit: cover;
   /* padding: ; */
   /* transition: all; */
@@ -339,6 +339,23 @@ p {
   /* transform: scale(1.03); */
   opacity: 80%;
 }
+
+
+.product-dimensions {
+  display: block;
+  margin: 0 auto;
+  height:600px;
+  width:480px ;
+}
+
+@media only screen and (max-width: 860px) {
+.product-dimensions {
+  align-items: center;
+  height:auto;
+  width: 100%;
+}
+}
+
 
 footer {
   background-color: #e2ddd3;
@@ -433,7 +450,7 @@ footer {
 
   padding: 20px;
   font-size: 20px;
-  width: 20px;
+  width: 18px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -448,7 +465,7 @@ footer {
 
   padding: 20px;
   font-size: 20px;
-  width: 20px;
+  width: 18px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -579,7 +596,7 @@ order:3;
 .section2 {
   display: flex;
   justify-content: center;
-  padding: 40px 40px;
+  padding: 40px 40px 0px 40px;
   width: 80%;
   margin: 0 auto;
   flex-direction: column;

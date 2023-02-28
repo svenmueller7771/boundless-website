@@ -15,7 +15,6 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   </header>
 <body>
-
   <global-navbar></global-navbar>
   <div id="herobanner" class="herobanner">
     <div class="herobanner-text">
@@ -64,10 +63,10 @@
   <script>
     window.onscroll = function() {myFunction()};
   
-    // Get the navbar
+    // Get the navbar and dropdown content
     var navbar = document.getElementById("navbar");
     
-    // Get the offset position of the navbar
+    // Get the offset position of the navbar and dropwdown content
     var sticky = navbar.offsetTop;
     
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
@@ -79,6 +78,7 @@
       }
     }
   </script>
+
 </body>
 <global-footer></global-footer>
 

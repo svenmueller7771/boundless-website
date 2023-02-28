@@ -19,10 +19,8 @@ class Header extends HTMLElement {
           <a class="navbar-link" href="index.html">Home</a>
         </li>
         <li class="navbar-item">
-
-          <!-- <a class="navbar-link" href="products.html">Products</a> -->
-          <a href="products.html"><button class="navbar-dropdown-button">Products</button></a>
-          <div class="dropdown-content">
+          <a class="navbar-link" href="products.html">Products</a>
+          <div class="dropdown-content" id="dropdown">
             <a href="frame-gallery.html">Frame gallery</a>
             <a href="floating-frames.html">Floating frames</a>
             <a href="standing-mirror.html">Standing mirror</a>
@@ -30,7 +28,6 @@ class Header extends HTMLElement {
             <a href="lego-coffee-table.html">Lego coffee table</a>
             <a href="backgammon-travel.html">Backgammon travel set</a>
           </div>
-
         </li>
         <li class="navbar-item">
           <a class="navbar-link" href="shop.html">Shop</a>
