@@ -874,12 +874,16 @@ order:3;
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 10px 40px 10px 40px;
   width: 83.5%;
   margin: 0 auto;
   flex-direction: column;
 }
 
+.section2 p {
+  text-align:justify ;
+}
 
 
 
@@ -888,7 +892,8 @@ order:3;
 .slideshow-container {
   /* max-width: 100%; */
   position: relative;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
   width: 100%;
   /* padding: 40px; */
 
@@ -901,7 +906,7 @@ order:3;
 
 .number img {
   height: 600px;
-  object-fit: cover;
+  object-fit:cover;
 
 }
 

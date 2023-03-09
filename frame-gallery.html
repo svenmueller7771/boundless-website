@@ -24,32 +24,48 @@
   <div class="section" style="background-color:lightgrey">
 
     <div class="section-text">
-        <h1 class="section-header">A perfect excuse to find those favourites, asap.</h1>
-        <p class="">Turn your favourite artworks, photos, polaroids, or pressed flowers into a gallery.</p> 
-          <p>Why Floating? Well by design, our Floating frames don't have a background, so it looks like your art is floating.</p>
-          <p>Don't have art? That's okay! We've curated some 4-piece & 8-piece galleries for you that are fitted with wholesome artworks from local artists, like <a class="navbar-link" href="/fine-art-and-prints">FranklySaid</a> & <a class="navbar-link" href="https://www.photosbystephane.co.za/shop">Stephané Van Eck</a> fine art prints.</p>
-     
-        <span id="section-button" class="button"><a href="shop.html"></a></span>
-      </div>
-      <img src="website-images/frame-gallery-cover-photo.png" alt="" />
+      <h1 class="section-header">A perfect excuse to find those favourites, asap.</h1>
+      <p class="">Turn your favourite artworks, photos, polaroids, or pressed flowers into a gallery.</p>
+      <p>Why Floating? Well by design, our Floating frames don't have a background, so it looks like your art is
+        floating.</p>
+      <p>Don't have art? That's okay! We've curated some 4-piece & 8-piece galleries for you that are fitted with
+        wholesome artworks from local artists, like <a class="navbar-link" href="/fine-art-and-prints">FranklySaid</a> &
+        <a class="navbar-link" href="https://www.photosbystephane.co.za/shop">Stephané Van Eck</a> fine art prints.</p>
+
+      <span id="section-button" class="button"><a href="shop.html"></a></span>
+    </div>
+    <img src="website-images/frame-gallery-cover-photo.png" alt="" />
   </div>
 
 
-    <h2 class="headers">4-piece frame gallery</h2>
+  <h2 class="headers">4-piece frame gallery</h2>
 
-    <div class="container">
-      <img class="collection" src="website-images/Frame-Gallery-1.png">
-      <img class="collection" src="website-images/Frame-Gallery-2.png">
-      <img class="collection" src="website-images/Frame-Gallery-3.png">
-      <img class="collection" src="website-images/Frame-Gallery-4.png">
-    </div>
-  
+  <div class="container">
+    <img class="collection" src="website-images/Frame-Gallery-1.png">
+    <img class="collection" src="website-images/Frame-Gallery-2.png">
+    <img class="collection" src="website-images/Frame-Gallery-3.png">
+    <img class="collection" src="website-images/Frame-Gallery-4.png">
+  </div>
+
   <div class="section2">
     <p>The 4-piece floating frame gallery includes 2 x A2 and 2 x A3 floating frames, with or without art. </p>
-    <p>Depending on your preferred spacing in between the frames you can expect a total layout of approximately 940 x 1240mm.</p>
-    <img class="product-dimensions-portrait" src="website-images/frame-gallery-dimensions.png" alt="frame gallery dimensions" />
+    <p>Depending on your preferred spacing in between the frames you can expect a total layout of approximately 940 x
+      1240mm.</p>
+    <img class="product-dimensions-portrait" src="website-images/frame-gallery-dimensions.png"
+      alt="frame gallery dimensions" />
   </div>
 
+  <br>
+  <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" preload="none" onclick="this.play()" height="100%" width="1440px" id="bgvid"
+    playsinline autoplay muted loop>
+    <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+    <!-- <source src="website-images/standing-mirror-grain.mov" type="video/mov"> -->
+  </video>
+  <!-- <div id="polina">
+    <button>Pause</button>
+  </div> -->
+ 
+  <br>
 
   <h2 class="headers">8-piece frame gallery</h2>
 
@@ -62,8 +78,10 @@
 
   <div class="section2">
     <p>The 8-piece floating frame gallery includes 2 x A1, 4 x A3 and 2 x A4 floating frames, with or without art. </p>
-    <p>Depending on your preferred spacing in between the frames you can expect a total layout of approximately 2030 x 1360mm.</p>
-    <img class="product-dimensions-landscape" src="website-images/frame-gallery-dimensions-2.png" alt="frame gallery dimensions" />
+    <p>Depending on your preferred spacing in between the frames you can expect a total layout of approximately 2030 x
+      1360mm.</p>
+    <img class="product-dimensions-landscape" src="website-images/frame-gallery-dimensions-2.png"
+      alt="frame gallery dimensions" />
   </div>
 
   <h2 class="headers">Conscious craftsmanship</h2>
@@ -80,12 +98,13 @@
 
 
   <h2 class="headers">Wood types</h2>
- 
+
   <div class="frame-gallery-wrapper">
     <div class="frame-gallery-card">
       <img class="" src="website-images/woodtype-oak-1.png">
       <div class="info">
-        <h1>Oak</h1>      </div>
+        <h1>Oak</h1>
+      </div>
     </div>
     <div class="frame-gallery-card">
       <img class="" src="website-images/woodtype-ash-1.png">
@@ -116,10 +135,11 @@
 
   <h2 class="headers">Delivery of goods</h2>
   <div class="section2" style="background-color:lightgrey">
-    <p>Please note that the frame galleries can be ordered with or without the art displayed, if you choose to select the frames-only option we will include everything you’ll need to insert your own art and hang up the frames (excl. tools)</p>
+    <p>Please note that the frame galleries can be ordered with or without the art displayed, if you choose to select
+      the frames-only option we will include everything you’ll need to insert your own art and hang up the frames (excl.
+      tools)</p>
     <p>The product is delivered in a cardboard box & paper mesh (an eco-friendly alternative to bubble wrap) to protect
       the condition & integrity of your product during transport & to minimize our carbon footprint.</p>
-      <br>
   </div>
 
 
@@ -165,6 +185,41 @@
         navbar.classList.remove("sticky");
       }
     }
+  </script>
+  <script>
+    var vid = document.getElementById("bgvid");
+    var pauseButton = document.querySelector("#polina button");
+
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+      vid.removeAttribute("autoplay");
+      vid.pause();
+      pauseButton.innerHTML = "Paused";
+    }
+
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+
+    vid.addEventListener('ended', function () {
+      // only functional if "loop" is removed 
+      vid.pause();
+      // to capture IE10
+      vidFade();
+    });
+
+
+    pauseButton.addEventListener("click", function () {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
+
+
   </script>
   <script>
     let slideIndex = 1;
