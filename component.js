@@ -24,9 +24,10 @@ class Header extends HTMLElement {
             <a href="frame-gallery.html">Frame gallery</a>
             <a href="floating-frames.html">Floating frames</a>
             <a href="standing-mirror.html">Standing mirror</a>
-            <a href="acoustic-akupanels.html">Acoustic akupanels</a>
+            <a href="acoustic-wood-slat-panel.html">Acoustic wood slat panel</a>
             <a href="lego-coffee-table.html">Lego coffee table</a>
             <a href="backgammon-travel.html">Backgammon travel set</a>
+            <a href="fine-art-prints.html">Fine art prints</a>
           </div>
         </li>
         <li class="navbar-item">

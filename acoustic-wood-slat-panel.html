@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="website-images/Boundless-ST-01.png">
+</head>
+<header>
+  <title>
+    boundless | Akupanels
+  </title>
+  <!-- Bootsrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Primary css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+
+<body>
+  <global-navbar></global-navbar>
+  <div class="slideshow-container">
+    <div class="number count">
+      <div class="numbertext">1 / 3</div>
+      <img src="website-images/Akupanel-1.jpeg" style="width:100%">
+      <div class="caption-text"></div>
+    </div>
+
+    <div class="number count">
+      <div class="numbertext">2 / 3</div>
+      <img src="website-images/Akupanel-2.jpg" style="width:100%">
+      <div class="caption-text"></div>
+    </div>
+
+    <div class="number count">
+      <div class="numbertext">3 / 3</div>
+      <img src="website-images/Akupanel-4.png" style="width:100%">
+      <div class="caption-text"></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+
+  <div class="section" style="background-color:whitesmoke">
+    <div class="section-text">
+      <h1 class="section-header">Introducing, the Akupanel.</h1>
+      <p>A modern, aesthetic wood slatted acoustic panel made from recycled plastics and solid wood.
+      <p>Easy to install, built to last, and make styling any space, simple.</p>
+      <p>Available in Oak or white Ash wood, and black felt.</p>
+      <span id="section-button" class="button"><a href="shop.html"></a></span>
+    </div>
+    <img src="website-images/akupanel-ash.jpg">
+  </div>
+
+  <h2 class="headers">Conscious craftsmanship</h2>
+  <div class="section2" style="background-color:lightgrey">
+    <p>Our commitment to environmental conservation is at the core of everything we do.</p>
+    <p>That's why we take pride in offering acoustic felt boards made from recycled plastic, and source all of our wood
+      from sustainable suppliers.</p>
+    <p>We recognize the importance of preserving our forests, and as part of our efforts to
+      give back, we have partnered with the <a class="navbar-link" href="https://greenpop.org/">Greenpop Foundation</a>
+      and joined their tree-volution movement! By doing so, we aim to ensure that for every tree we use, many more are
+      planted to help sustain our natural resources for generations to come. For every items unit you purchase, we
+      donate R50.</p>
+  </div>
+
+
+  <h2 class="headers">Wood types</h2>
+
+  <div class="wrapper">
+    <div class="card">
+      <img class="" src="website-images/akupanel-oak.jpg">
+      <div class="info">
+        <h1 class="">Oak</h1>
+        <p>Classic choice. Colours can range from light tan to medium brown with distinctive grain patterns. Timeless
+          appearance.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="" src="website-images/akupanel-oak-brown.jpg">
+      <div class="info">
+        <h1 class="">Brown Oak</h1>
+        <p>Oiled and stained by hand with 20% brown mineral wax oil to give a slightly darker shade of brown ~ medium
+          brown.</p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+    </div>
+    <div class="card">
+      <img class="" src="website-images/akupanel-oak-smoked.jpg">
+      <div class="info">
+        <h1 class="">Smoked Oak</h1>
+        <p>
+          Treated with smoke to achieve a darker, richer colour and a more distinctive grain pattern.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="" src="website-images/akupanel-ash.jpg">
+      <div class="info">
+        <h1 class="">White Ash</h1>
+        <p>
+          Popular choice. Creamy white and light in colour. Contemporary appearance.
+        </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+    </div>
+    <div class="card">
+      <img class="" src="website-images/akupanel-ash-black.jpg">
+      <div class="info">
+        <h1 class="">Black Ash</h1>
+        <p>
+          Oiled and stained by hand with a 80% black mineral wax oil.
+        </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+    </div>
+    <div class="card">
+      <img class="" src="website-images/akupanel-walnut.jpg">
+      <div class="info">
+        <h1 class="">Walnut</h1>
+        <p>
+          A rich, warm, deep chocolate brown. Luxurious appearance.
+        </p>
+        <!-- <a href="#" class="button">Read More</a> -->
+      </div>
+    </div>
+  </div>
+
+  <h2 class="headers">Specifications</h2>
+
+  <ul class="dimensions-table">
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Panel width</div>
+      <div class="table-row-2" data-label="Description">600mm</div>
+    </li>
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Panel height</div>
+      <div class="table-row-2" data-label="Description">2400mm</div>
+    </li>
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Panel depth</div>
+      <div class="table-row-2" data-label="Description">22mm</div>
+    </li>
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Slats per panel</div>
+      <div class="table-row-2" data-label="Description">15</div>
+    </li>
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Panel weight</div>
+      <div class="table-row-2" data-label="Description">5kg</div>
+    </li>
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Slat Width</div>
+      <div class="table-row-2" data-label="Description">32mm</div>
+    </li>
+    <li class="table-row">
+      <div class="table-row-1" data-label="Wood Type">Gap Width</div>
+      <div class="table-row-2" data-label="Description">15mm</div>
+      <!-- <div class="col col-3" data-label="Amount">R 3250.00</div> -->
+    </li>
+  </ul>
+
+
+  <img src="website-images/akupanel-dimensions-3.png" style="width:100%" alt="mirror dimensions" />
+
+
+    
+
+
+  <h2 class="headers">Gallery</h2>
+
+  <div class="container">
+    <img class="collection" src="website-images/Akupanel-2.jpg">
+    <img class="collection" src="website-images/Akupanel-3.png">
+    <img class="collection" src="website-images/Akupanel-4.png">
+    <img class="collection" src="website-images/Akupanel-1.jpeg">
+    <img class="collection" src="website-images/Akupanel-3.png">
+    <img class="collection" src="website-images/Akupanel-4.png">
+    <img class="collection" src="website-images/Akupanel-2.jpg">
+    <img class="collection" src="website-images/Akupanel-1.jpeg">
+    <img class="collection" src="website-images/Akupanel-4.png">
+    <img class="collection" src="website-images/Akupanel-1.jpeg">
+    <img class="collection" src="website-images/Akupanel-2.jpg">
+    <img class="collection" src="website-images/Akupanel-3.png">
+   
+  </div>
+
+
+
+  <div class="footer-spacer"></div>
+  <script src="component.js"></script>
+  <script>
+    const navbarMenuButton = document.querySelector(".navbar-menu-button");
+    const navbarMenu = document.querySelector(".navbar-menu");
+
+    navbarMenuButton.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      navbarMenuButton.classList.toggle("active");
+      navbarMenu.classList.toggle("active");
+    }
+
+  </script>
+  <script>
+    document.querySelector(".topbanner-button").addEventListener("click", function () {
+      this.closest(".topbanner").style.display = "none";
+
+      document.getElementById("herobanner").style.height = "calc(100vh - 29px)";
+    })
+  </script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("number");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+<global-footer></global-footer>
+
+</html>
