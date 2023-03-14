@@ -78,7 +78,7 @@ class Footer extends HTMLElement {
       <a class="fa fa-facebook fa-lg" href="https://www.facebook.com/boundlessinteriors"></a>
   
     </div>
-    <p class="trademark">Copyright © 2022 | boundless | All rights reserved</p>
+    <p class="trademark">copyright 2022 | boundless | all rights reserved</p>
   </footer>   
     `;
   }

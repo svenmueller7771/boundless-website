@@ -1,25 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="website-images/Boundless-ST-01.png">
-  </head>
+
+<head>
+  <link rel="icon" href="website-images/Boundless-ST-01.png">
+</head>
 <header>
-    <title>
-      boundless | Shop
-    </title>
-   <!-- Bootsrap -->
+  <title>
+    boundless | Shop
+  </title>
+  <!-- Bootsrap -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Primary css -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </header>
-<body>
-   <global-navbar></global-navbar>
-   
-   <img class="logo-about" src="website-images/Boundless-ST-01.png" alt="boundless logo">
 
-   <div class="footer-spacer"></div>
+<body>
+  <global-navbar></global-navbar>
+  <div class="shop-herobanner">
+    <img class="about-logo" src="website-images/Boundless-ST-01.png" alt="boundless logo">
+  </div>
+
+  <h2 class="headers">made by artisans in Cape Town</h2>
+
+
+
+<p>We can accommodate custom sizing and variations, but this would be subject to our <a class="navbar-link" href="custom-tables.html">custom order</a> terms.</p>
+<p>Our products require a lead time of 2-4 weeks from order confirmation. </p>
+<p>We optionally offer an on-site installation service fee within proximity of the Western Cape.</p>
+ <p>Enquiries? Get in touch with us on <a class="navbar-link" href="contact-us.html">email</a> or call +27 79 633 9690.</p>
+
+
+ <h1 class="headers">Shop</h1>
+ <a class=navbar-link href="acoustic-wood-slat-panel-shop.html"><h2 class="headers">Acoustic wood slat panels</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">Standing mirror</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">Frame galleries</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">Floating frames</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">Lego coffee table</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">Custom live edge table</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">Backgammon travel sets</h2></a>
+ <a class=navbar-link href=""><h2 class="headers">FranklySaid prints</h2></a>
+ <!-- <div class="container">
+   <img class="collection" src="website-images/IMG_9930.png">
+   <img class="collection" src="website-images/IMG_9927.png">
+   <img class="collection" src="website-images/IMG_9925.png">
+   <img class="collection" src="website-images/IMG_9898.png">
+ </div> -->
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <div class="footer-spacer"></div>
   <script src="component.js"></script>
   <script>
     const navbarMenuButton = document.querySelector(".navbar-menu-button");
@@ -41,14 +84,14 @@
     })
   </script>
   <script>
-    window.onscroll = function() {myFunction()};
-  
+    window.onscroll = function () { myFunction() };
+
     // Get the navbar
     var navbar = document.getElementById("navbar");
-    
+
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
-    
+
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
       if (window.pageYOffset >= sticky) {
@@ -60,4 +103,5 @@
   </script>
 </body>
 <global-footer></global-footer>
+
 </html>
