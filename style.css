@@ -539,10 +539,7 @@ p {
 
 .franklysaid {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: auto;
-  width: 100%;
 }
 
 .franklysaidcontainer {
@@ -550,7 +547,7 @@ p {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 80px;
   /* border: 2px solid red; */
 }
@@ -594,10 +591,10 @@ p {
   display: flex;
   justify-content: left;
   align-items: center;
-  overflow: auto;
+  /* overflow: auto; */
   position: relative;
   scroll-behavior: smooth;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
 
@@ -657,18 +654,14 @@ p {
 
    .franklysaidcontainer .franklysaidscroll .franklysaidimages{
     width: 100%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
     overflow-x: auto;
-    /* overscroll-behavior-inline: contain; */
- 
+    scroll-snap-type: x mandatory;
   }
 
   .franklysaidcontainer .franklysaidscroll .franklysaidimages img{
     object-fit: fit;
     height:auto;
     padding-bottom: 0px;
-    /* scroll-snap-align: center; */
   }
 }
 
