@@ -21,12 +21,12 @@ class Header extends HTMLElement {
         <li class="navbar-item">
           <a class="navbar-link" href="products.html">Products</a>
           <div class="dropdown-content" id="dropdown">
-            <a href="frame-gallery.html">Frame gallery</a>
-            <a href="floating-frames.html">Floating frames</a>
             <a href="standing-mirror.html">Standing mirror</a>
             <a href="acoustic-wood-slat-panel.html">Acoustic wood slat panel</a>
-            <a href="lego-coffee-table.html">Lego coffee table</a>
+            <a href="frame-gallery.html">Frame gallery</a>
+            <a href="floating-frames.html">Floating frames</a>
             <a href="backgammon-travel.html">Backgammon travel set</a>
+            <a href="lego-coffee-table.html">Lego coffee table</a>
             <a href="fine-art-prints.html">Fine art prints</a>
           </div>
         </li>

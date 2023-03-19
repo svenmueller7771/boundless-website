@@ -6,7 +6,7 @@
 </head>
 <header>
     <title>
-        boundless | Akupanels
+        boundless | Wood slat panel
     </title>
     <!-- Bootsrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,11 +31,6 @@
                 </nav>
             </div>
         </div>
-
-
-
-
-
         <div class="grid product">
             <div class="column-xs-12 column-md-7">
                 <div class="product-gallery">
@@ -43,29 +38,74 @@
                         <img class="active" src="website-images/Akupanel-7.png">
                     </div>
                     <ul class="image-list">
-                        <li class="image-item"><img src="website-images/Akupanel-7-1.png"></li>
-                        <li class="image-item"><img src="website-images/Akupanel-7-3.png"></li>
-                        <li class="image-item"><img src="website-images/Akupanel-7-2.png"></li>
-
+                        <li class="size-item"><img src="website-images/Akupanel-7-1.png"></li>
+                        <li class="size-item"><img src="website-images/Akupanel-7-3.png"></li>
+                        <li class="size-item"><img src="website-images/Akupanel-7-2.png"></li>
                     </ul>
                 </div>
             </div>
             <div class="column-xs-12 column-md-5">
-                <h2 class="headers">Acoustic wood slat panel</h2>
-                <h3 class="headers">From 2895.00</h3>
-                <div class="description">
-                    <p>A modern, aesthetic wood slatted acoustic panel made from recycled plastics and solid wood.</p>
-                    <p>Easy to install, built to last, and make styling any space, simple.</p>
-                    <p>Available in the following wood types:</p>
-                    <input type="radio" name="wood types" value="Oak">Oak<br>
-                <input type="radio" name="wood types" value="Brown Oak">Brown Oak<br>
-                <input type="radio" name="wood types" value="Smoked Oak">Smoked Oak<br>
-                <input type="radio" name="wood types" value="Ash">Ash<br>
-                <input type="radio" name="wood types" value="Black Ash">Black Ash<br>
-                <input type="radio" name="wood types" value="Walnut">Walnut<br>
-
+                <p>Available in the following wood types:</p>
+                <div class="option-container">
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="oak" value="oak">
+                        <label for="oak" aria-label="oak">
+                            <span></span>Oak
+                            <div class="option-card oak card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="brown-oak" value="brown oak">
+                        <label for="brown-oak" aria-label="brown oak">
+                            <span></span>Brown Oak
+                            <div class="option-card brown-oak card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="smoked-oak" value="smoked oak">
+                        <label for="smoked-oak" aria-label="smoked oak">
+                            <span></span>Smoked Oak
+                            <div class="option-card smoked-oak card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="white-ash" value="white ash">
+                        <label for="white-ash" aria-label="ash">
+                            <span></span>White Ash
+                            <div class="option-card white-ash card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="black-ash" value="black ash">
+                        <label for="black-ash" aria-label="black ash">
+                            <span></span>Black Ash
+                            <div class="option-card black-ash card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="walnut" value="walnut">
+                        <label for="walnut" aria-label="walnut">
+                            <span></span>Walnut
+                            <div class="option-card walnut card--sm">
+                            </div>
+                        </label>
+                    </div>
                 </div>
-                <button class="add-to-cart">Add To Cart</button>
+                <p class="section-text">From 2895.00</p>
+                <div class="quantity" id="quantity">
+                    <div class="qty-group">
+                        <input type="button" value="-" class="minus">
+                        <input type="number" id="quantity_6411f7e0a6057" class="input-text qty text" name="quantity"
+                            value="1" title="Qty" min="1" placeholder="" inputmode="numeric" autocomplete="off">
+                        <input type="button" value="+" class="plus">
+                    </div>
+                </div>
+                <span id="shop-button" class="button"><a href="add-to-cart.html"></a></span>
             </div>
         </div>
         <div class="grid related-products">
@@ -75,12 +115,12 @@
             <div class="column-xs-12 column-md-4">
                 <img src="website-images/Standing-Mirror-1.png">
                 <h4>Standing mirror</h4>
-                <p class="price">R 7950.00</p>
+                <p class="price">From R7950.00</p>
             </div>
             <div class="column-xs-12 column-md-4">
                 <img src="website-images/Frame-Gallery-2.png">
-                <h4>Floating Frames</h4>
-                <p class="price">R TBC</p>
+                <h4>4-piece frame gallery (incl/excl artwork)</h4>
+                <p class="price">From R4150.00</p>
             </div>
             <div class="column-xs-12 column-md-4">
                 <img src="website-images/IMG_1116.jpg">
@@ -89,10 +129,6 @@
             </div>
         </div>
     </div>
-
-
-
-
     <div class="footer-spacer"></div>
     <script src="component.js"></script>
     <script>

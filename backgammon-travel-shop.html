@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="website-images/Boundless-ST-01.png">
+</head>
+<header>
+    <title>
+        boundless | Backgammon
+    </title>
+    <!-- Bootsrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</header>
+
+<body>
+    <global-navbar></global-navbar>
+
+    <div class="shop-container">
+        <div class="grid second-nav">
+            <div class="column-xs-12">
+                <nav>
+                    <ol class="breadcrumb-list">
+                        <!-- <li class="breadcrumb-item"><a href="#"></a></li> -->
+                        <li class="breadcrumb-item"><a href="shop.html" class="navbar-link">Shop</a></li>
+                        <li class="breadcrumb-item active">Upcycled Backgammon Travel Set</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="grid product">
+            <div class="column-xs-12 column-md-7">
+                <div class="product-gallery">
+                    <div class="product-image">
+                        <img class="active" src="website-images/">
+                    </div>
+                    <ul class="image-list">
+                        <li class="image-item"><img src="website-images/"></li>
+                        <li class="image-item"><img src="website-images/"></li>
+                        <li class="image-item"><img src="website-images/"></li>
+                        <li class="image-item"><img src="website-images/"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column-xs-12 column-md-5">
+                <h2>Upcycled backgammon travel set</h2>
+                <p>Unique backgammon travel sets made from repurposed materials. Light & compact. Pairs well with a
+                    beach sunset and a glass of wine! </p>
+                <p>Dimensions: 300 x 250mm </p>
+                <p>Spare wood checkers included.</p>
+
+                <div class="option-container">
+                    <!-- <div class="option">
+                        <input type="radio" name="wood-type" id="white-ash" value="white ash">
+                        <label for="white-ash" aria-label="ash">
+                            <span></span>White Ash
+                            <div class="option-card white-ash card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="oak" value="oak">
+                        <label for="oak" aria-label="oak">
+                            <span></span>Oak
+                            <div class="option-card oak card--sm">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="wood-type" id="walnut" value="walnut">
+                        <label for="walnut" aria-label="walnut">
+                            <span></span>Walnut
+                            <div class="option-card walnut card--sm">
+                            </div>
+                        </label>
+                    </div> -->
+                </div>
+
+                <p class="section-text">R 950.00</p>
+
+                <div class="quantity" id="quantity">
+                    <div class="qty-group">
+                        <input type="button" value="-" data-quantity="minus" data-field="quantity" class="minus">
+                        <input type="number" id="quantity_6411f7e0a6057" class="input-text qty text" name="quantity"
+                            value="0" title="Qty" min="1" placeholder="" inputmode="numeric" autocomplete="off">
+                        <input type="button" value="+" data-quantity="plus" data-field="quantity" class="plus">
+                    </div>
+                </div>
+                <span id="shop-button" class="button"><a href="add-to-cart.html"></a></span>
+            </div>
+        </div>
+        <div class="grid related-products">
+            <div class="column-xs-12">
+                <h3>You may also like</h3>
+            </div>
+            <div class="column-xs-12 column-md-4">
+                <img src="website-images/Akupanel-2.jpg">
+                <h4>Acoustic wood slat panel</h4>
+                <p class="price">From R2895.00</p>
+            </div>
+            <div class="column-xs-12 column-md-4">
+                <img src="website-images/Frame-Gallery-2.png">
+                <h4>4-piece frame gallery (incl/excl artwork)</h4>
+                <p class="price">From R4150.00</p>
+            </div>
+            <div class="column-xs-12 column-md-4">
+                <img src="website-images/Standing-Mirror-1.png">
+                <h4>Standing mirror</h4>
+                <p class="price">From R7950.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-spacer"></div>
+    <script src="component.js"></script>
+    <script>
+        const navbarMenuButton = document.querySelector(".navbar-menu-button");
+        const navbarMenu = document.querySelector(".navbar-menu");
+
+        navbarMenuButton.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            navbarMenuButton.classList.toggle("active");
+            navbarMenu.classList.toggle("active");
+        }
+
+    </script>
+    <script>
+        document.querySelector(".topbanner-button").addEventListener("click", function () {
+            this.closest(".topbanner").style.display = "none";
+
+            document.getElementById("herobanner").style.height = "calc(100vh - 29px)";
+        })
+    </script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("number");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        jQuery(document).ready(function () {
+            // This button will increment the value
+            $('[data-quantity="plus"]').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('data-field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If is not undefined
+                if (!isNaN(currentVal)) {
+                    // Increment
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            // This button will decrement the value till 0
+            $('[data-quantity="minus"]').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('data-field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If it isn't undefined or its greater than 0
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    // Decrement one
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+
+
+    </script>
+</body>
+<global-footer></global-footer>
+
+</html>
