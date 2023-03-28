@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+
 body {
   background-color: whitesmoke;
   background-size: auto;
@@ -113,8 +114,6 @@ p {
 
 @media only screen and (max-width: 860px) {
 
-
-
   .dropdown-content {
     position: relative;
     background-color: whitesmoke;
@@ -131,6 +130,7 @@ p {
   }
 
 
+
 }
 
 
@@ -142,9 +142,20 @@ p {
   padding: 0px 5px;
 }
 
-.navbar-item {
-  padding: 6.5px 10px
+#navbar-menu-cart {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  padding: 0px 5px;
+  align-items: center;
 }
+
+
+.navbar-item {
+  padding: 6.5px 10px;
+  align-items: center;
+}
+
 
 .navbar-link {
   font-size: 100%;
@@ -152,7 +163,17 @@ p {
   color: black;
 }
 
+#navbar-link {
+  font-size: 150%;
+  font-weight: 400;
+  color: black;
+}
+
 .navbar-link:hover {
+  color: grey;
+}
+
+#navbar-link:hover {
   color: grey;
 }
 
@@ -183,6 +204,9 @@ p {
   .navbar-link:hover {
     color: #e2ddd3;
   }
+  #navbar-link:hover {
+    color: #e2ddd3;
+  }
 
   .navbar-menu {
     flex-direction: column;
@@ -192,8 +216,8 @@ p {
     text-align: center;
     transition: 0.3s;
     position: fixed;
-    left: -100%;
-    top: 67px;
+    left: -103%;
+    top: 68px;
     box-shadow:
       0 10px 27px rgba(0, 0, 0, 0.05);
 
@@ -235,7 +259,7 @@ p {
 
 
 .herobanner {
-  background-image: url(website-images/boundless_website_herobanner-2.png);
+  background-image: url(website-images/website-herbanner.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 64px);
@@ -258,8 +282,19 @@ p {
 .logo {
   height: 240px;
   width: 240px;
-  margin: 0;
+  margin-top: 28px;
 
+}
+
+@media only screen and (max-width:860px) {
+  .herobanner{
+    background-position-x: 50%;
+    background-position-y: 50%;
+    height: calc(100vh - 300px);
+  }
+
+
+  
 }
 
 
@@ -268,7 +303,7 @@ p {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin-top: 160px;
+  margin-top: 180px;
   perspective: 1000px;
 }
 
@@ -294,6 +329,8 @@ p {
   box-sizing: border-box;
   border-radius: 5px;
 }
+
+
 
 #shop-button a:before,
 #shop-button a:after {
@@ -333,9 +370,10 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
   gap: 10px;
-  margin: 0px 80px;
+  margin: 0px;
   justify-content: center;
-  transition: 0.5s ease-in-out
+  transition: 0.5s ease-in-out;
+  width: 100%;
 }
 
 .standing-mirror-wrapper {
@@ -343,8 +381,9 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
   gap: 10px;
-  margin: 0px 80px;
-  transition: 0.5s ease-in-out
+  margin: 0px;
+  transition: 0.5s ease-in-out;
+  width: 100%;
 }
 
 .frame-gallery-wrapper {
@@ -352,10 +391,12 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
   gap: 10px;
-  margin: 0px 80px;
+  margin: 0px;
   margin-bottom: 40px;
-  transition: 0.5s ease-in-out
+  transition: 0.5s ease-in-out;
+  width: 100%;
 }
+
 
 .card {
   width: 200px;
@@ -434,17 +475,17 @@ p {
 
 
 .card:hover {
-  transform: translateY(20px);
+  transform: translateY(10px);
   /* opacity: 60%; */
 }
 
 .standing-mirror-card:hover {
-  transform: translateY(20px);
+  transform: translateY(10px);
   /* opacity: 60%; */
 }
 
 .frame-gallery-card:hover {
-  transform: translateY(20px);
+  transform: translateY(10px);
   /* opacity: 60%; */
 }
 
@@ -458,16 +499,16 @@ p {
 
 .standing-mirror-card:hover h1 {
   opacity: 1;
-  transform: translateY(260px);
+  transform: translateY(285px);
   margin: 10px;
-  font-size: 48px;
+  font-size: 24px;
 }
 
 .frame-gallery-card:hover h1 {
   opacity: 1;
-  transform: translateY(275px);
+  transform: translateY(285px);
   margin: 10px;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .card:hover p {
@@ -506,31 +547,56 @@ p {
 }
 
 
-
-
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
   gap: 10px;
-  margin: 0px 80px;
-
 }
 
 .collection {
   width: 100%;
-  Height: 300px;
-  object-fit: cover;
-  /* padding: ; */
-  /* transition: all; */
-  background-color: white;
-
+  height: 400px;
+  object-fit:cover;
 }
 
 .collection:hover {
-  /* transform: scale(1.03); */
   opacity: 80%;
+  
 }
+
+
+
+@media only screen and (max-width: 980px) {
+
+  .container {
+    grid-template-columns: auto auto;
+  }
+
+  .collection {
+    width: 100%;
+    height: 350px;
+
+  }
+
+  video {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+
+  video {
+    width: 100%;
+  }
+}
+
+
 
 
 
@@ -552,16 +618,16 @@ p {
   /* border: 2px solid red; */
 }
 
-.franklysaidcontainer .franklysaidscroll{
- position: relative;
- width: 100%;
- height: 50%;
- /* overflow-x: scroll; */
+.franklysaidcontainer .franklysaidscroll {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  /* overflow-x: scroll; */
 
 }
 
 
-.franklysaidcontainer .franklysaidscroll:before{
+.franklysaidcontainer .franklysaidscroll:before {
   position: absolute;
   content: "";
   left: 0;
@@ -569,11 +635,11 @@ p {
   z-index: 999;
   height: 100%;
   width: 150px;
-  background-image: linear-gradient(90deg,whitesmoke, transparent);
+  background-image: linear-gradient(90deg, whitesmoke, transparent);
 }
 
 
-.franklysaidcontainer .franklysaidscroll:after{
+.franklysaidcontainer .franklysaidscroll:after {
   position: absolute;
   content: "";
   right: 0;
@@ -585,7 +651,7 @@ p {
 }
 
 
-.franklysaidcontainer .franklysaidscroll .franklysaidimages{
+.franklysaidcontainer .franklysaidscroll .franklysaidimages {
   width: 100%;
   height: auto;
   display: flex;
@@ -601,19 +667,19 @@ p {
 
 
 
-.franklysaidcontainer .franklysaidscroll .franklysaidimages .franklysaidimg{
- min-width: 380px;
- height: 450px;
- cursor: pointer;
- /* border: 1px solid black; */
- overflow:hidden;
-/* NEW */
- position: relative;  
- transition: 0.6s ease-in-out;
- text-align: end;
- color: black;
- scroll-snap-align: center;
- 
+.franklysaidcontainer .franklysaidscroll .franklysaidimages .franklysaidimg {
+  min-width: 380px;
+  height: 450px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  /* NEW */
+  position: relative;
+  transition: 0.6s ease-in-out;
+  text-align: end;
+  color: black;
+  scroll-snap-align: center;
+
 
 }
 
@@ -628,14 +694,14 @@ p {
   flex-direction: column;
   opacity: 0;
   transition: 0.3s;
-  color:black;
+  color: black;
 }
 
 /* .franklysaidcontainer .franklysaidscroll .franklysaidimages .franklysaidimg:hover {
   transform: translateY(-40px);
 }  */
 
-.franklysaidcontainer .franklysaidscroll .franklysaidimages .franklysaidtext:hover{
+.franklysaidcontainer .franklysaidscroll .franklysaidimages .franklysaidtext:hover {
   opacity: 0;
 }
 
@@ -648,19 +714,19 @@ p {
 
 
 @media only screen and (max-width: 920px) {
-  .franklysaidcontainer .franklysaidscroll{
+  .franklysaidcontainer .franklysaidscroll {
     flex-direction: row;
-   }
+  }
 
-   .franklysaidcontainer .franklysaidscroll .franklysaidimages{
+  .franklysaidcontainer .franklysaidscroll .franklysaidimages {
     width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
 
-  .franklysaidcontainer .franklysaidscroll .franklysaidimages img{
+  .franklysaidcontainer .franklysaidscroll .franklysaidimages img {
     object-fit: fit;
-    height:auto;
+    height: auto;
     padding-bottom: 0px;
   }
 }
@@ -719,17 +785,64 @@ p {
 }
 
 
-
-.shop-herobanner {
-  background-image: url(website-images/Akupanel-7.png);
+.products-herobanner {
+  background-image: url(website-images/Akupanel-1.jpeg);
   background-size: cover;
-  background-position: -160px;
-  height: 580px;
-  opacity: 80%;
+  background-repeat: no-repeat;
+  /* background-position: -180px; */
+  height: calc(100vh - 64px);
+  width: 100%;
+  opacity: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.shop-herobanner {
+  background-image: url(website-images/Akupanel-7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: -180px; */
+  position: relative;
+  height: 580px;
+  width: 100%;
+  opacity: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 860px) {
+  
+
+  .logo {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 0;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 40px;
+
+  }
+
+
+  .button {
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin-top: 160px;
+    perspective: 1000px;
+  }
+
+}
+
 
 
 footer {
@@ -784,7 +897,7 @@ footer {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) {
 
   .footer-container {
     display: flex;
@@ -872,6 +985,7 @@ footer {
 }
 
 
+
 /* Other Pages */
 
 
@@ -881,6 +995,9 @@ footer {
   height: 200px;
   width: 200px;
 }
+
+
+
 
 .mailchimp {
   display: flex;
@@ -990,7 +1107,7 @@ footer {
 /* Hide the images by default */
 .number {
   display: none;
-  
+
 }
 
 
@@ -1001,7 +1118,7 @@ footer {
 
 .number .fs-image {
   height: 580px;
-  object-fit:contain;
+  object-fit: contain;
 
 }
 
@@ -1065,7 +1182,7 @@ footer {
   bottom: 80px;
   width: 100%;
   text-align: center;
- 
+
 }
 
 .number .fs-numbertext {
@@ -1110,11 +1227,6 @@ footer {
     opacity: 1
   }
 }
-
-
-
-
-
 
 
 
@@ -1799,13 +1911,6 @@ nav li {
   transition: transform 0.3s ease-out;
 }
 
-.container {
-  margin: auto;
-  padding: 0 1rem;
-  max-width: 75rem;
-  width: 100%;
-}
-
 
 .grid>[class*=column-] {
   padding: 1rem;
@@ -2312,7 +2417,7 @@ input[type=number] {
     width: 100%;
   }
 
-  }
+}
 
 .select-box__current {
   position: relative;
@@ -2438,3 +2543,58 @@ input[type=number] {
   transform: scale(0);
 
 }
+
+
+/* <div class="info-section">
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="material-icons"></div>
+        <h3 class="info-heading">Expert Support</h3>
+        <p class="info-p"> */
+
+
+ .info-section {
+display: flex;
+flex-direction: row;
+margin: 0px;
+justify-content: start;
+background-color: lightgray;
+width: 100%;
+ }   
+ 
+ .info-cards {
+  display: grid;
+grid-template-columns: auto auto auto auto;
+grid-template-rows: auto;
+justify-items: center;
+gap: 20px;
+ }       
+
+ .info-card {
+  padding: 20px;
+  padding-top: 0px;
+ }       
+
+ .info-card .material-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 240%;
+ }
+
+ .info-heading {
+  text-align: center;
+ }     
+ 
+ .info-p {
+  text-align: justify;
+ }       
+
+ @media only screen and (max-width:860px) {
+  .info-cards {
+  grid-template-columns: auto ;
+ }
+}
+
+
+

@@ -10,10 +10,11 @@
   <!-- Bootsrap -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Primary css -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  </header>
+</header>
+
 <body>
   <global-navbar></global-navbar>
   <div id="herobanner" class="herobanner">
@@ -25,36 +26,46 @@
   <h4 class="headers">A curated selection of meticulously crafted goods, made by artisans in Cape Town.</h4>
   <h1 class="headers">Featured Products</h1>
 
-  <a class=navbar-link href="acoustic-wood-slat-panel.html"><h2 class="headers">Acoustic wood slat panels</h2></a>
+  <a class=navbar-link href="acoustic-wood-slat-panel.html">
+    <h2 class="headers">Acoustic wood slat panels</h2>
+  </a>
   <div class="container">
     <img class="collection" src="website-images/Akupanel-1.jpeg">
     <img class="collection" src="website-images/Akupanel-2.jpg">
     <img class="collection" src="website-images/Akupanel-5.png">
     <img class="collection" src="website-images/Akupanel-6.png">
   </div>
-  <a class=navbar-link href="standing-mirror.html"><h2 class="headers">Standing mirror</h2></a>
+  <a class=navbar-link href="standing-mirror.html">
+    <h2 class="headers">Standing mirror</h2>
+  </a>
   <div class="container">
     <img class="collection" src="website-images/standing-mirror-dimensions.png">
     <img class="collection" src="website-images/standing-mirror-dimensions.png">
     <img class="collection" src="website-images/standing-mirror-dimensions.png">
     <img class="collection" src="website-images/standing-mirror-dimensions.png">
- 
+
   </div>
-  <a class=navbar-link href="frame-gallery-shop.html"><h2 class="headers">Frame galleries</h2></a>
+  <a class=navbar-link href="frame-gallery.html">
+    <h2 class="headers">Frame galleries</h2>
+  </a>
   <div class="container">
     <img class="collection" src="website-images/Frame-Gallery-1.png">
     <img class="collection" src="website-images/Frame-Gallery-2.png">
     <img class="collection" src="website-images/Frame-Gallery-3.png">
     <img class="collection" src="website-images/Frame-Gallery-4.png">
   </div>
-  <a class=navbar-link href="backgammon-travel.html"><h2 class="headers">Backgammon travel sets</h2></a>
+  <a class=navbar-link href="backgammon-travel.html">
+    <h2 class="headers">Backgammon travel sets</h2>
+  </a>
   <div class="container">
-    <img class="collection" src="website-images/IMG_1719.jpg">
-    <img class="collection" src="website-images/IMG_1728.jpg">
+    <img class="collection" src="website-images/IMG_3192.JPG">
+    <img class="collection" src="website-images/IMG_3169.JPG">
     <img class="collection" src="website-images/IMG_1116.jpg">
-    <img class="collection" src="website-images/IMG_1720.JPG">
+    <img class="collection" src="website-images/IMG_3197.JPG">
   </div>
-  <a class=navbar-link href="fine-art-prints.html"><h2 class="headers">FranklySaid prints</h2></a>
+  <a class=navbar-link href="fine-art-prints.html">
+    <h2 class="headers">FranklySaid fine art prints</h2>
+  </a>
   <div class="container">
     <img class="collection" src="website-images/Artwork_2023 Batch 1_Page_03.png">
     <img class="collection" src="website-images/Artwork_2023 Batch 1_Page_01.png">
@@ -62,10 +73,14 @@
     <img class="collection" src="website-images/Artwork_2023 Batch 1_Page_06.png">
   </div>
 
-
-
-  
   <div class="footer-spacer"></div>
+
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-91bff5b1-c8c5-45d7-a36e-8837d48aa668"></div>
+
+  <div class="footer-spacer"></div>
+
   <script src="component.js"></script>
   <script>
     const navbarMenuButton = document.querySelector(".navbar-menu-button");
@@ -87,14 +102,14 @@
     })
   </script>
   <script>
-    window.onscroll = function() {myFunction()};
-  
+    window.onscroll = function () { myFunction() };
+
     // Get the navbar and dropdown content
     var navbar = document.getElementById("navbar");
-    
+
     // Get the offset position of the navbar and dropwdown content
     var sticky = navbar.offsetTop;
-    
+
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
       if (window.pageYOffset >= sticky) {
