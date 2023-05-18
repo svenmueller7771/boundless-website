@@ -35,12 +35,12 @@
             <div class="column-xs-12 column-md-7">
                 <div class="product-gallery">
                     <div class="product-image">
-                        <img class="active" src="website-images/Akupanel-7.png">
+                        <img class="active" name="akupanel-primary" src="website-images/Akupanel-7.png">
                     </div>
                     <ul class="image-list">
-                        <li class="size-item"><img src="website-images/Akupanel-7-1.png"></li>
-                        <li class="size-item"><img src="website-images/Akupanel-7-3.png"></li>
-                        <li class="size-item"><img src="website-images/Akupanel-7-2.png"></li>
+                        <li class="size-item"><img name="akupanel-secondary" src="website-images/Akupanel-7-1.png"></li>
+                        <li class="size-item"><img name="akupanel-secondary" src="website-images/Akupanel-7-3.png"></li>
+                        <li class="size-item"><img name="akupanel-secondary" src="website-images/Akupanel-7-2.png"></li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <p>Available in the following wood types:</p>
                 <div class="option-container">
                     <div class="option">
-                        <input type="radio" name="wood-type" id="oak" value="oak">
+                        <input type="radio" class="akupanel-select" name="wood-type" id="oak" value="oak" checked>
                         <label for="oak" aria-label="oak">
                             <span></span>Oak
                             <div class="option-card oak card--sm">
@@ -56,7 +56,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="brown-oak" value="brown oak">
+                        <input type="radio" class="akupanel-select" name="wood-type" id="brown-oak" value="brown oak">
                         <label for="brown-oak" aria-label="brown oak">
                             <span></span>Brown Oak
                             <div class="option-card brown-oak card--sm">
@@ -64,7 +64,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="smoked-oak" value="smoked oak">
+                        <input type="radio" class="akupanel-select" name="wood-type" id="smoked-oak" value="smoked oak">
                         <label for="smoked-oak" aria-label="smoked oak">
                             <span></span>Smoked Oak
                             <div class="option-card smoked-oak card--sm">
@@ -72,7 +72,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="white-ash" value="white ash">
+                        <input type="radio" class="akupanel-select" name="wood-type" id="white-ash" value="white ash">
                         <label for="white-ash" aria-label="ash">
                             <span></span>White Ash
                             <div class="option-card white-ash card--sm">
@@ -80,7 +80,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="black-ash" value="black ash">
+                        <input type="radio" class="akupanel-select" name="wood-type" id="black-ash" value="black ash">
                         <label for="black-ash" aria-label="black ash">
                             <span></span>Black Ash
                             <div class="option-card black-ash card--sm">
@@ -88,7 +88,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="walnut" value="walnut">
+                        <input type="radio" class="akupanel-select" name="wood-type" id="walnut" value="walnut">
                         <label for="walnut" aria-label="walnut">
                             <span></span>Walnut
                             <div class="option-card walnut card--sm">
@@ -96,11 +96,11 @@
                         </label>
                     </div>
                 </div>
-                <p class="section-text">From 2895.00</p>
+                <p class="section-text">R 2895.00</p>
                 <div class="quantity" id="quantity">
                     <div class="qty-group">
                         <input type="button" value="-" class="minus">
-                        <input type="number" id="quantity_6411f7e0a6057" class="input-text qty text" name="quantity"
+                        <input type="number" id="qty-text" class="input-text qty text" name="quantity"
                             value="1" title="Qty" min="1" placeholder="" inputmode="numeric" autocomplete="off">
                         <input type="button" value="+" class="plus">
                     </div>
@@ -113,18 +113,18 @@
                 <h3>You may also like</h3>
             </div>
             <div class="column-xs-12 column-md-4">
-                <img src="website-images/Standing-Mirror-1.png">
-                <h4>Standing mirror</h4>
+                <a href="standing-mirror-shop.html"><img src="website-images/Standing-Mirror-1.png"></a>
+                <a href="standing-mirror-shop.html" class="navbar-link"><h4>Standing mirror</h4></a>
                 <p class="price">From R7950.00</p>
             </div>
             <div class="column-xs-12 column-md-4">
-                <img src="website-images/Frame-Gallery-2.png">
-                <h4>4-piece frame gallery (incl/excl artwork)</h4>
+                <a href="frame-gallery-shop.html"><img src="website-images/Frame-Gallery-2.png"></a>
+                <a href="frame-gallery-shop.html" class="navbar-link"><h4>4-piece frame gallery (incl/excl artwork)</h4></a>
                 <p class="price">From R4150.00</p>
             </div>
             <div class="column-xs-12 column-md-4">
-                <img src="website-images/IMG_1116.jpg">
-                <h4>Backgammon travel set</h4>
+                <a href="backgammon-travel-shop.html"><img src="website-images/IMG_1116.jpg"></a>
+                <a href="backgammon-travel-shop.html" class="navbar-link"><h4>Backgammon travel set</h4></a>
                 <p class="price">R 950.00</p>
             </div>
         </div>

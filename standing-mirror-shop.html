@@ -35,12 +35,12 @@
             <div class="column-xs-12 column-md-7">
                 <div class="product-gallery">
                     <div class="product-image">
-                        <img class="active" src="website-images/Standing-Mirror-1.png">
+                        <img class="active" name="standingmirror-primary" src="website-images/Standing-Mirror-1.png">
                     </div>
                     <ul class="image-list">
-                        <li class="image-item"><img src="website-images/Standing-Mirror-2.JPEG"></li>
-                        <li class="image-item"><img src="website-images/standing-mirror-dimensions-t.png"></li>
-                        <li class="image-item"><img src="website-images/Standing-Mirror-4.png"></li>
+                        <li class="image-item"><img name="standingmirror-secondary" src="website-images/Standing-Mirror-2.JPEG"></li>
+                        <li class="image-item"><img name="standingmirror-secondary" src="website-images/standing-mirror-dimensions-t.png"></li>
+                        <li class="image-item"><img name="standingmirror-secondary" src="website-images/Standing-Mirror-4.png"></li>
 
                     </ul>
                 </div>
@@ -49,7 +49,7 @@
                 <p>Available in the following wood types:</p>
                 <div class="option-container">
                     <div class="option">
-                        <input type="radio" name="wood-type" id="white-ash" value="white ash">
+                        <input type="radio" class="standingmirror-select" name="wood-type" id="white-ash" value="white ash">
                         <label for="white-ash" aria-label="ash">
                             <span></span>White Ash
                             <div class="option-card white-ash card--sm">
@@ -57,7 +57,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="oak" value="oak">
+                        <input type="radio" class="standingmirror-select" name="wood-type" id="oak" value="oak">
                         <label for="oak" aria-label="oak">
                             <span></span>Oak
                             <div class="option-card oak card--sm">
@@ -65,7 +65,7 @@
                         </label>
                     </div>
                     <div class="option">
-                        <input type="radio" name="wood-type" id="walnut" value="walnut">
+                        <input type="radio" class="standingmirror-select" name="wood-type" id="walnut" value="walnut">
                         <label for="walnut" aria-label="walnut">
                             <span></span>Walnut
                             <div class="option-card walnut card--sm">
@@ -73,11 +73,11 @@
                         </label>
                     </div>
                 </div>
-                <p class="section-text">From 2895.00</p>
+                <p class="section-text">R 7495.00</p>
                 <div class="quantity" id="quantity">
                     <div class="qty-group">
                         <input type="button" value="-" class="minus">
-                        <input type="number" id="quantity_6411f7e0a6057" class="input-text qty text" name="quantity"
+                        <input type="number" id="qty-text" class="input-text qty text" name="quantity"
                             value="1" title="Qty" min="1" placeholder="" inputmode="numeric" autocomplete="off">
                         <input type="button" value="+" class="plus">
                     </div>
@@ -90,18 +90,18 @@
                 <h3>You may also like</h3>
             </div>
             <div class="column-xs-12 column-md-4">
-                <img src="website-images/Akupanel-2.jpg">
-                <h4>Acoustic wood slat panel</h4>
+                <a href="acoustic-wood-slat-panel-shop.html"><img src="website-images/Akupanel-2.jpg"></a>
+                <a href="acoustic-wood-slat-panel-shop.html" class="navbar-link"><h4>Acoustic wood slat panel</h4></a>
                 <p class="price">From R2895.00</p>
             </div>
             <div class="column-xs-12 column-md-4">
-                <img src="website-images/Frame-Gallery-2.png">
-                <h4>4-piece frame gallery (incl/excl artwork)</h4>
-                <p class="price">From R4150.00</p>
+                <a href="frame-gallery-shop.html"><img src="website-images/Frame-Gallery-2.png"></a>
+              <a href="frame-gallery-shop.html" class="navbar-link"><h4>4-piece frame gallery (incl/excl artwork)</h4></a>
+              <p class="price">From R4150.00</p>
             </div>
             <div class="column-xs-12 column-md-4">
-                <img src="website-images/IMG_1116.jpg">
-                <h4>Backgammon travel set</h4>
+                <a href="backgammon-travel-shop.html"><img src="website-images/IMG_1116.jpg"></a>
+                <a href="backgammon-travel-shop.html" class="navbar-link"><h4>Backgammon travel set</h4></a>
                 <p class="price">R 950.00</p>
             </div>
         </div>

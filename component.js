@@ -132,3 +132,278 @@ class Footer extends HTMLElement {
 customElements.define('global-navbar', Header);
 customElements.define('global-footer', Footer);
 customElements.define('info-section', Section);
+
+
+
+
+
+// Global shop
+
+var qtyPlusBtn = document.getElementsByClassName("plus");
+var qtyMinusBtn = document.getElementsByClassName("minus");
+var qtyValue = document.getElementById("qty-text");
+
+
+qtyPlusBtn[0].addEventListener("click", function(){
+  qtyValue.value++;
+  console.log(qtyValue.value);
+});
+
+
+qtyMinusBtn[0].addEventListener("click", function(){
+if (qtyValue.value > 0) {
+qtyValue.value--};
+console.log(qtyValue.value);
+return qtyValue.value;
+});
+
+
+
+// Akupanel shop
+var radioButtons = document.getElementsByClassName('akupanel-select');
+var updateImagePrimary = document.getElementsByName('akupanel-primary');
+var updateImageSecondary = document.getElementsByName('akupanel-secondary');
+
+function isRadioChecked() {
+  for (var i=0; i < radioButtons.length; i++) {
+   if(radioButtons[i].checked) {
+    console.log(radioButtons[i].value);
+   }
+}
+};
+
+radioButtons[0].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R 2895.00 ";
+  console.log(updatePrice[0].innerHTML);
+  updateImagePrimary[0].src = 'website-images/Akupanel-7.png';
+  console.log(updateImagePrimary[0].src);
+  isRadioChecked();
+});
+radioButtons[1].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R 2995.00 ";
+  console.log(updatePrice[0].innerHTML);
+  updateImagePrimary[0].src = 'website-images/Akupanel-7-1.png';
+  console.log(updateImagePrimary[0].src);
+  isRadioChecked();
+});
+radioButtons[2].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R 3295.00 ";
+  console.log(updatePrice[0].innerHTML);
+  updateImagePrimary[0].src = 'website-images/Akupanel-7-1.png';
+  console.log(updateImagePrimary[0].src);
+  isRadioChecked();
+});
+radioButtons[3].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R 2895.00 ";
+  console.log(updatePrice[0].innerHTML);
+  updateImagePrimary[0].src = 'website-images/Akupanel-7.png';
+  console.log(updateImagePrimary[0].src);
+  isRadioChecked();
+});
+radioButtons[4].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R 2995.00 ";
+  console.log(updatePrice[0].innerHTML);
+  updateImagePrimary[0].src = 'website-images/Akupanel-7-1.png'
+  console.log(updateImagePrimary[0].src);
+  isRadioChecked();
+});
+radioButtons[5].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R 3295.00 ";
+  console.log(updatePrice[0].innerHTML);
+  updateImagePrimary[0].src = 'website-images/Akupanel-7-2.png'
+  console.log(updateImagePrimary[0].src);
+  isRadioChecked();
+});
+
+
+
+// Standing Mirror shop
+var radioButtons1 = document.getElementsByClassName('standingmirror-select');
+var updateImagePrimary1 = document.getElementsByName('standingmirror-primary');
+var updateImageSecondary1 = document.getElementsByName('standingmirror-secondary');
+
+var updatePrice =  document.getElementsByClassName("section-text");
+
+
+function isRadioChecked1() {
+  for (var i=0; i < radioButtons1.length; i++) {
+   if(radioButtons1[i].checked) {
+    console.log(radioButtons1[i].value);
+   }
+}
+};
+
+
+radioButtons1[0].addEventListener("click", function(){
+  updatePrice[0].innerHTML = "R 7495.00";
+  console.log(updatePrice[0].innerHTML);
+});
+radioButtons1[1].addEventListener("click", function(){
+  updatePrice[0].innerHTML = " R7495.00";
+  console.log(updatePrice[0].innerHTML);
+});
+radioButtons1[2].addEventListener("click", function(){
+  updatePrice[0].innerHTML = "R 8795.00";
+  console.log(updatePrice[0].innerHTML);
+});
+
+
+
+
+
+
+
+/* <p class="section-text">From 2895.00</p> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///Web Developer JS course exercise answers
+
+
+// function sayHello() {
+//   console.log("Hello");
+// }
+
+// sayHello();
+
+// var sayBye = function () {
+//   console.log("Bye");
+// }
+
+// sayBye();
+
+
+// function checkDriverAge() {
+//   var age = prompt("What is your age?");
+//   if (Number(age) === 18) {
+//     console.log("Congratulations on your first year of driving. Enjoy the ride!");
+//   }
+//   else if
+//     (Number(age) < 18) {
+//     console.log("Sorry, you are too young to drive this car. Powering off");
+//   }
+//   else if
+//     (Number(age) > 18) {
+//     console.log("Powering On. Enjoy the ride!");
+//   }
+// }
+
+// checkDriverAge();
+
+
+// var age = prompt("What is your age?");
+
+// function checkDriverAge(age) {
+//   if (Number(age) < 18) {
+//     return "Sorry, you are too yound to drive this car. Powering off";
+//   } else if (Number(age) > 18) {
+//     return "Powering On. Enjoy the ride!";
+//   } else if (Number(age) === 18) {
+//     return "Congratulations on your first year of driving. Enjoy the ride!";
+//   }
+// };
+
+
+// checkDriverAge(18);
+
+
+// var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+// array.pop[2]
+
+// array.concat("Kiwi")
+
+
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+
+// array2[1][1][0];
+
+
+
+
+//   var newsFeed = [
+//     {
+//       username: "svenmuller7",
+//       timeline: "hello, today is a good day to have a good day",
+//     },
+//     {
+//       username: "nickpruim420",
+//       timeline: "JS is soo coool",
+//     },
+//     {
+//       username: "selan20",
+//       timeline: "woodworking 101 is my favourite subject.",
+//     },
+//     {
+//       username: "nala16",
+//       timeline: "woodworking 101 is my favourite subject.",
+//     },
+//   ];
+
+
+//   var database = [
+//     {
+//       username: "svenmuller7",
+//       password: "muller7"
+//     },
+//     {
+//       username: "nickpruim",
+//       password: "muller7"
+//     },
+//     {
+//       username: "selan20",
+//       password: "muller7"
+//     },
+//     {
+//       username: "nala16",
+//       password: "muller7"
+//     }
+//   ];
+
+//   var username = prompt("What is your username?");
+//   var password = prompt("What is your password?");
+  
+
+
+// function isUserValid(username, password) {
+//   for  (var i=0; i < database.length; i++) {
+//     if ( username === database[i].username && 
+//     password === database[i].password ) {
+//     return true; 
+//   }
+// }
+//   return false;
+// };
+
+
+
+//   function signIn(username,password) {
+//     if (isUserValid(username,password) === true) {
+//     console.log(newsFeed); }
+//     else { 
+//       alert("Sorry, username and password are incorrect.");
+//     }
+//   };
+
+
+//   signIn(username,password);
+
+
+
